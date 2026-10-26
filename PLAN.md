@@ -6,9 +6,9 @@
 - [x] 4. Hero and about section
 - [x] 5. Project grid with filters
 - [x] 6. Project detail pages
-- [ ] 7. Skills matrix
-- [ ] 8. CV viewer page
-- [ ] 9. PDF export of the CV
+- [x] 7. Skills matrix
+- [x] 8. CV viewer page
+- [x] 9. PDF export of the CV (print-styled page, browser Save as PDF)
 - [ ] 10. Contact form (Netlify Forms or function)
 - [ ] 11. Screenshots pipeline (capture each live app, optimise, add to `/public`)
 - [ ] 12. SEO: metadata, Open Graph, sitemap
