@@ -4,7 +4,7 @@
 - [x] 2. `types/` interfaces and `projects.ts`/`skills.ts`/`cv.ts` data files
 - [x] 3. Layout, theme switcher, navigation, Providers
 - [x] 4. Hero and about section
-- [ ] 5. Project grid with filters
+- [x] 5. Project grid with filters
 - [ ] 6. Project detail pages
 - [ ] 7. Skills matrix
 - [ ] 8. CV viewer page
