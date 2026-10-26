@@ -3,7 +3,7 @@
 - [x] 1. Scaffold the project (stack in `CLAUDE.md`), strict `tsconfig`, lint, `netlify.toml`, `.env.example`; first working commit
 - [x] 2. `types/` interfaces and `projects.ts`/`skills.ts`/`cv.ts` data files
 - [x] 3. Layout, theme switcher, navigation, Providers
-- [ ] 4. Hero and about section
+- [x] 4. Hero and about section
 - [ ] 5. Project grid with filters
 - [ ] 6. Project detail pages
 - [ ] 7. Skills matrix
