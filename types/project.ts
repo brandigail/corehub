@@ -12,5 +12,6 @@ export interface Project {
   repoUrl: string | null
   screenshots: string[]
   demoBullets: string[]
+  architecture?: string[]
   status: ProjectStatus
 }

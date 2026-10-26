@@ -15,6 +15,13 @@ export const mobileProjects: Project[] = [
       'See drafts sync to Neon Postgres',
       'Install the PWA and accept the update prompt',
     ],
+    architecture: [
+      'A browser listener with silence detection sends audio to a Netlify Function, which transcribes it with Groq Whisper.',
+      'The assistant loop calls a Groq LLM with tools; drafts and agenda items persist in Neon Postgres, with an iCal feed.',
+      'Replies are spoken back sentence by sentence, chunked to fit the speech model limit and prefetched for smooth playback.',
+      'Every function requires a session cookie, and Groq keys exist only in Netlify function env, never in the client bundle.',
+      'An Android shell built with Capacitor loads the live site and keeps it alive with a foreground microphone service.',
+    ],
     status: 'IN_PROGRESS',
   },
   {

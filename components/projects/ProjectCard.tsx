@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { statusLabels } from "@/lib/projects";
 import type { Project } from "@/types";
@@ -16,7 +17,11 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="text-lg font-semibold">{project.name}</h3>
+          <h3 className="text-lg font-semibold">
+            <Link href={`/projects/${project.slug}`} className="hover:text-accent">
+              {project.name}
+            </Link>
+          </h3>
           <span className="shrink-0 rounded-full bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent">
             {statusLabels[project.status]}
           </span>

@@ -5,7 +5,7 @@
 - [x] 3. Layout, theme switcher, navigation, Providers
 - [x] 4. Hero and about section
 - [x] 5. Project grid with filters
-- [ ] 6. Project detail pages
+- [x] 6. Project detail pages
 - [ ] 7. Skills matrix
 - [ ] 8. CV viewer page
 - [ ] 9. PDF export of the CV
