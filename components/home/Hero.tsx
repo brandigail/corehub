@@ -21,8 +21,8 @@ export function Hero() {
         </h1>
         <p className="mt-5 max-w-xl text-lg leading-8 text-muted">
           I build full-stack web and mobile apps, from low-code platforms to
-          hand-written TypeScript, and ship each one with a live demo. Browse
-          all 20 below.
+          hand-written TypeScript. Browse all 20 projects below; live demos go
+          up as each one ships.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a

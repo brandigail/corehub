@@ -15,7 +15,7 @@ export function generateStaticParams() {
 export async function generateMetadata(props: PageProps<"/projects/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
   const project = getProject(slug);
-  if (!project) return {};
+  if (!project) notFound();
   return {
     title: `${project.name} | CoreHub`,
     description: project.pitch,
