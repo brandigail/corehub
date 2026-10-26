@@ -9,7 +9,7 @@ export const mobileProjects: Project[] = [
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Groq Whisper', 'Netlify Functions', 'Neon Postgres'],
     liveUrl: 'https://apex-voice-app.netlify.app',
     repoUrl: 'https://github.com/brandigail/apex-voice',
-    screenshots: [],
+    screenshots: ['/screenshots/apex-voice-signin-desktop.png', '/screenshots/apex-voice-signin-mobile.png'],
     demoBullets: [
       'Dictate a message and get strict JSON-structured output',
       'See drafts sync to Neon Postgres',
