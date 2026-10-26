@@ -150,7 +150,7 @@ export const webProjects: Project[] = [
       'Reply in a thread, add an emoji reaction and edit a message',
       'Compare role permissions across users',
     ],
-    status: 'LIVE',
+    status: 'PLANNED',
   },
   {
     slug: 'corehub',
@@ -160,7 +160,7 @@ export const webProjects: Project[] = [
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Netlify'],
     liveUrl: 'https://branprojects.netlify.app',
     repoUrl: 'https://github.com/brandigail/corehub',
-    screenshots: [],
+    screenshots: ['/screenshots/corehub-home-desktop.png'],
     demoBullets: [
       'Filter the project grid by web or mobile and by tech tag',
       'Open a project for its architecture deep-dive',

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { statusLabels } from "@/lib/projects";
@@ -9,12 +10,24 @@ const linkClass =
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface">
-      <div
-        aria-hidden
-        className="flex h-32 items-center justify-center bg-accent-soft text-5xl font-semibold text-accent"
-      >
-        {project.name.charAt(0)}
-      </div>
+      {project.screenshots[0] ? (
+        <div className="relative h-40 bg-accent-soft">
+          <Image
+            src={project.screenshots[0]}
+            alt={`${project.name} preview`}
+            fill
+            sizes="(min-width: 1024px) 384px, (min-width: 640px) 50vw, 100vw"
+            className="object-cover object-top"
+          />
+        </div>
+      ) : (
+        <div
+          aria-hidden
+          className="flex h-40 items-center justify-center bg-accent-soft text-5xl font-semibold text-accent"
+        >
+          {project.name.charAt(0)}
+        </div>
+      )}
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-lg font-semibold">
