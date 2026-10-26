@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact form definition</title>
+  </head>
+  <body>
+    <!-- Static copy of the contact form so Netlify can detect it at build time. The real form is components/contact/ContactForm.tsx and posts here. -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="name" />
+      <input name="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>

@@ -9,7 +9,7 @@
 - [x] 7. Skills matrix
 - [x] 8. CV viewer page
 - [x] 9. PDF export of the CV (print-styled page, browser Save as PDF)
-- [ ] 10. Contact form (Netlify Forms or function)
+- [x] 10. Contact form (Netlify Forms or function)
 - [ ] 11. Screenshots pipeline (capture each live app, optimise, add to `/public`)
 - [ ] 12. SEO: metadata, Open Graph, sitemap
 - [ ] 13. Accessibility, reduced-motion and Lighthouse pass
