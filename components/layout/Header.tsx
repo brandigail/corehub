@@ -5,12 +5,15 @@ import { ThemeToggle } from "./ThemeToggle";
 export function Header() {
   return (
     <header className="print:hidden sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between px-4 py-2 sm:h-16 sm:flex-nowrap sm:px-6 sm:py-0">
         <Link href="/" className="text-lg font-semibold tracking-tight">
           {siteName}
           <span className="text-accent">.</span>
         </Link>
-        <nav aria-label="Main" className="flex items-center gap-1 sm:gap-3">
+        <nav
+          aria-label="Main"
+          className="order-last flex w-full items-center justify-between sm:order-none sm:ml-auto sm:w-auto sm:gap-3"
+        >
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -20,8 +23,8 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <ThemeToggle />
         </nav>
+        <ThemeToggle />
       </div>
     </header>
   );

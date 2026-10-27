@@ -11,6 +11,8 @@ for (const [label, viewport] of Object.entries(sizes)) {
   for (const [index, path] of (paths.length ? paths : ["/"]).entries()) {
     await page.goto(new URL(path, url).href, { waitUntil: "load" });
     await page.waitForTimeout(2500);
+    // Netlify injects a "Powered by" badge iframe on some plans; keep it out of the screenshots.
+    await page.addStyleTag({ content: "#nl-badge-frame { display: none !important; }" });
     await page.screenshot({ path: `${process.env.OUT}/${slug}-${index + 1}-${label}.png` });
   }
   console.log(label, "console errors:", errors.length, errors.slice(0, 3));

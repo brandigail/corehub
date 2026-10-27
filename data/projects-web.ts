@@ -7,9 +7,9 @@ export const webProjects: Project[] = [
     kind: 'WEB',
     pitch: 'Full e-commerce shop with 60 products, checkout, discount codes and an owner admin panel.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Neon Postgres', 'Drizzle ORM', 'Netlify'],
-    liveUrl: null,
-    repoUrl: null,
-    screenshots: [],
+    liveUrl: 'https://aura-retail-demo.netlify.app',
+    repoUrl: 'https://github.com/brandigail/aura-retail',
+    screenshots: ['/screenshots/aura-retail-home-desktop.png', '/screenshots/aura-retail-product-desktop.png', '/screenshots/aura-retail-home-mobile.png'],
     demoBullets: [
       'Browse and filter products, apply the code WELCOME10 and pay with the test card',
       'Switch the shop between dollars, Rands or both, with VAT shown',
@@ -22,7 +22,7 @@ export const webProjects: Project[] = [
       'Emails never block an order: each one is stored in an outbox, then delivered over SMTP, with failures recorded and retryable.',
       'Security and privacy: signed httpOnly admin cookie checked in the proxy and every action, unguessable order links, rate-limited lookups and no card data handled.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'taskforge',
