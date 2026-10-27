@@ -19,16 +19,18 @@ export function ScreenshotGallery({ name, screenshots }: ScreenshotGalleryProps)
   }
 
   return (
-    <ul className="mt-8 grid items-start gap-4 sm:grid-cols-2" aria-label={`${name} screenshots`}>
+    <ul className="mt-8 grid gap-4 sm:grid-cols-2" aria-label={`${name} screenshots`}>
       {screenshots.map((src, index) => (
-        <li key={src} className="overflow-hidden rounded-2xl border border-border bg-surface">
+        <li
+          key={src}
+          className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-accent-soft"
+        >
           <Image
             src={src}
             alt={`${name} screenshot ${index + 1}`}
-            width={1280}
-            height={800}
-            sizes="(min-width: 640px) 50vw, 100vw"
-            className="mx-auto h-auto max-h-[32rem] w-auto max-w-full"
+            fill
+            sizes="(min-width: 896px) 440px, (min-width: 640px) 50vw, 100vw"
+            className="object-contain"
           />
         </li>
       ))}

@@ -11,3 +11,5 @@ export const navItems: NavItem[] = [
   { label: "CV", href: "/cv" },
   { label: "Contact", href: "/contact" },
 ];
+
+export const siteUrl = "https://branprojects.netlify.app";

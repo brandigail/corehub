@@ -64,7 +64,7 @@ export function SkillsMatrix({ skills }: { skills: Skill[] }) {
           return (
             <li key={skill.name} className="rounded-2xl border border-border bg-surface p-4">
               <div className="flex items-center justify-between gap-3">
-                <h3 className="font-medium">{skill.name}</h3>
+                <h2 className="font-medium">{skill.name}</h2>
                 <LevelDots level={skill.level} />
               </div>
               <p className="mt-1 text-sm text-muted">{levelLabels[skill.level - 1]}</p>

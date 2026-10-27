@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "@/components/Providers";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { siteName, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,10 +16,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "CoreHub | Brandon Myers, Software & Product Developer";
+const description =
+  "Portfolio of Brandon Myers: 20 web and mobile apps with live demos, architecture notes, a CV and skills matrix.";
+
 export const metadata: Metadata = {
-  title: "CoreHub | Brandon Myers, Software & Product Developer",
-  description:
-    "Portfolio of Brandon Myers: 20 web and mobile apps with live demos, architecture notes, a CV and skills matrix.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  openGraph: { title, description, siteName, type: "website" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
