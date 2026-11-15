@@ -15,7 +15,8 @@ export function generateStaticParams() {
 export async function generateMetadata(props: PageProps<"/projects/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
   const project = getProject(slug);
-  if (!project) notFound();
+  // The page itself calls notFound(); doing it here too turns an unknown address into a 500 on Netlify.
+  if (!project) return { title: "Project not found | CoreHub" };
   return {
     title: `${project.name} | CoreHub`,
     description: project.pitch,
