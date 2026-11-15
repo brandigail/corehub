@@ -2,17 +2,17 @@ import type { Project } from '@/types'
 
 export const mobileProjects: Project[] = [
   {
-    slug: 'apex-voice',
-    name: 'Apex Voice',
+    slug: 'volita',
+    name: 'Volita',
     kind: 'MOBILE',
-    pitch: 'Voice dictation PWA that turns speech into structured emails, quotes, SMS and notes.',
-    stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Groq Whisper', 'Netlify Functions', 'Neon Postgres'],
-    liveUrl: 'https://apex-voice-app.netlify.app',
-    repoUrl: 'https://github.com/brandigail/apex-voice',
-    screenshots: ['/screenshots/apex-voice-record-desktop.png', '/screenshots/apex-voice-assistant-desktop.png', '/screenshots/apex-voice-signin-mobile.png'],
+    pitch: 'Talk to your business: voice notes become finished emails, quotes, WhatsApps and posts, plus a hands-free assistant that knows your agenda.',
+    stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Groq Whisper', 'Netlify Functions', 'Neon Postgres', 'Capacitor'],
+    liveUrl: 'https://volita.netlify.app',
+    repoUrl: 'https://github.com/brandigail/volita',
+    screenshots: ['/screenshots/volita-record-desktop.png', '/screenshots/volita-assistant-desktop.png', '/screenshots/volita-signin-mobile.png'],
     demoBullets: [
-      'Dictate a message and get strict JSON-structured output',
-      'See drafts sync to Neon Postgres',
+      'Pick a channel, dictate, and get a draft in that channel style (chat, caption, priced quote)',
+      'Talk to the hands-free assistant about your agenda and saved drafts',
       'Install the PWA and accept the update prompt',
     ],
     architecture: [
