@@ -30,7 +30,7 @@ export const mobileProjects: Project[] = [
     kind: 'MOBILE',
     pitch: 'Offline-first household budget PWA: monthly limits per category, a big numeric keypad, and savings goals that say how much to set aside.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Dexie', 'IndexedDB', 'Recharts', 'zod', 'PWA'],
-    liveUrl: null,
+    liveUrl: 'https://kist-budget.netlify.app',
     repoUrl: 'https://github.com/brandigail/kist-budget',
     screenshots: [
       '/screenshots/kist-dashboard-mobile.png',
@@ -48,7 +48,7 @@ export const mobileProjects: Project[] = [
       'Records carry a client UUID, updatedAt and soft-delete flag so sync can be added later; deleting a category keeps past spending visible.',
       'A goal\'s saved amount changes in the same transaction as the contribution, and a test checks they always agree.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'autopulse',
@@ -56,7 +56,7 @@ export const mobileProjects: Project[] = [
     kind: 'MOBILE',
     pitch: 'Offline-first vehicle service and fuel tracker: real fuel efficiency, cost per kilometre and reminders by distance or time.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Dexie', 'IndexedDB', 'Recharts', 'PWA'],
-    liveUrl: null,
+    liveUrl: 'https://autopulse-752.netlify.app',
     repoUrl: 'https://github.com/brandigail/autopulse',
     screenshots: [
       '/screenshots/autopulse-dashboard-mobile.png',
@@ -74,7 +74,7 @@ export const mobileProjects: Project[] = [
       'Repositories wrap writes in transactions: logging above the odometer raises it, and logging a service restarts matching reminders.',
       'The chart library is code-split so the first load stays small.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'pulsecare',
@@ -82,7 +82,7 @@ export const mobileProjects: Project[] = [
     kind: 'MOBILE',
     pitch: 'Fitness companion: routines, a set-by-set workout log with rest timer, water, macros and vitals, and strength analytics. Shipped as a PWA rather than Expo.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Dexie', 'IndexedDB', 'Recharts', 'PWA'],
-    liveUrl: null,
+    liveUrl: 'https://pulsecare-148.netlify.app',
     repoUrl: 'https://github.com/brandigail/pulsecare',
     screenshots: [
       '/screenshots/pulsecare-today-mobile.png',
@@ -100,7 +100,7 @@ export const mobileProjects: Project[] = [
       'The rest timer is built on an end time, so it stays right when a phone locks and wakes.',
       'The demo history is inserted after first paint by an atomic seed-if-empty, so it can never overwrite what a user saved.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'habitgrid',
@@ -160,7 +160,7 @@ export const mobileProjects: Project[] = [
     kind: 'MOBILE',
     pitch: 'Field technician tool: a priority job queue, inspection checklists, photos stamped with time and GPS, a signature pad and PDF export. Shipped as a PWA rather than Expo.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Dexie', 'IndexedDB', 'jsPDF', 'getUserMedia', 'Geolocation API', 'PWA'],
-    liveUrl: null,
+    liveUrl: 'https://fieldops-384.netlify.app',
     repoUrl: 'https://github.com/brandigail/fieldops',
     screenshots: [
       '/screenshots/fieldops-queue-mobile.png',
@@ -178,7 +178,7 @@ export const mobileProjects: Project[] = [
       'Signature strokes live in a fixed coordinate space so they survive rotation, and a pure check rejects dots and scribbles.',
       'jsPDF is loaded only when exporting; non-Latin-1 text is replaced so PDFs never print garbage.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'quickreceipt',
@@ -186,7 +186,7 @@ export const mobileProjects: Project[] = [
     kind: 'MOBILE',
     pitch: 'Receipt scanner that reads shop, date and total on the device, sorts into tax categories and exports a CSV and ZIP.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Tesseract.js', 'Dexie', 'JSZip', 'PWA'],
-    liveUrl: null,
+    liveUrl: 'https://quickreceipt-231.netlify.app',
     repoUrl: 'https://github.com/brandigail/quickreceipt',
     screenshots: [
       '/screenshots/quickreceipt-scan-mobile.png',
@@ -204,7 +204,7 @@ export const mobileProjects: Project[] = [
       'Parsing is one pure module tested on real scanner output, mistakes included.',
       'Exports neutralise cells starting with = + - or @, so scanned text cannot run as a spreadsheet formula.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'geotrace',

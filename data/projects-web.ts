@@ -134,7 +134,7 @@ export const webProjects: Project[] = [
     kind: 'WEB',
     pitch: 'Learning platform with a video course player, server-graded quizzes, PDF certificates and an instructor dashboard.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Video.js', 'Drizzle ORM', 'Neon Postgres', 'Auth.js', 'pdf-lib', 'Recharts', 'Netlify'],
-    liveUrl: null,
+    liveUrl: 'https://eduflux-337.netlify.app',
     repoUrl: 'https://github.com/brandigail/eduflux',
     screenshots: [
       '/screenshots/eduflux-lesson-desktop.png',
@@ -152,7 +152,7 @@ export const webProjects: Project[] = [
       'Write endpoints require a signed-in student, bookmark deletes are scoped to the owner, and the instructor page redirects students.',
       'Video.js is created inside an effect and disposed on unmount so it never touches the server render.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'tracelog',
@@ -212,7 +212,7 @@ export const webProjects: Project[] = [
     kind: 'WEB',
     pitch: 'Team chat with channels, DMs, threads, reactions, unread counters and presence: feels real time without WebSockets.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'TanStack Query', 'Netlify Functions', 'Drizzle ORM', 'Neon Postgres'],
-    liveUrl: null,
+    liveUrl: 'https://beam-chat.netlify.app',
     repoUrl: 'https://github.com/brandigail/beam',
     screenshots: [
       '/screenshots/beam-chat-desktop.png',
@@ -230,7 +230,7 @@ export const webProjects: Project[] = [
       'One rooms poll returns channels, DMs, presence and every unread count, and doubles as the presence heartbeat.',
       'Every function takes the caller from a signed cookie, checks room membership first and re-reads roles from the database; 24 integration tests run against real Neon.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'corehub',
