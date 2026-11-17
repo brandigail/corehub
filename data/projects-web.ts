@@ -30,7 +30,7 @@ export const webProjects: Project[] = [
     kind: 'WEB',
     pitch: 'Jira-style project workspace: drag-and-drop Kanban boards, sprint planning with burndown and velocity, and three roles enforced on the server.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Zustand', 'dnd-kit', 'Recharts', 'Drizzle ORM', 'Neon Postgres', 'Auth.js', 'Netlify'],
-    liveUrl: null,
+    liveUrl: 'https://taskforge-678.netlify.app',
     repoUrl: 'https://github.com/brandigail/taskforge',
     screenshots: [
       '/screenshots/taskforge-board-desktop.png',
@@ -48,7 +48,7 @@ export const webProjects: Project[] = [
       'A Zustand store updates optimistically and rolls back with a banner if the server refuses.',
       'Task numbers come from one atomic UPDATE ... RETURNING, so two people never share a number. Burndown and velocity are pure, tested functions.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'vaultx',
@@ -56,7 +56,7 @@ export const webProjects: Project[] = [
     kind: 'WEB',
     pitch: 'Zero-knowledge secret manager: everything is encrypted with AES-256-GCM in the browser, so the server only ever holds ciphertext.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Web Crypto API', 'zod', 'Netlify Functions', 'Neon Postgres'],
-    liveUrl: null,
+    liveUrl: 'https://vaultx-546.netlify.app',
     repoUrl: 'https://github.com/brandigail/vaultx',
     screenshots: [],
     demoBullets: [
@@ -70,7 +70,7 @@ export const webProjects: Project[] = [
       'Share links keep the key in the URL fragment, which browsers never send; revoked or expired shares have their ciphertext deleted.',
       'Round trip, wrong key and tamper detection are covered by unit tests.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'bistroflow',
@@ -160,7 +160,7 @@ export const webProjects: Project[] = [
     kind: 'WEB',
     pitch: 'Datadog-style log monitor: key-protected ingestion, live streaming, search with highlighting, stack traces and Discord or Slack alerts.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Recharts', 'Drizzle ORM', 'Neon Postgres', 'zod', 'Netlify'],
-    liveUrl: null,
+    liveUrl: 'https://tracelog.netlify.app',
     repoUrl: 'https://github.com/brandigail/tracelog',
     screenshots: [
       '/screenshots/tracelog-dashboard-desktop.png',
@@ -178,7 +178,7 @@ export const webProjects: Project[] = [
       'Ingestion keys are stored as hashes and compared in constant time; batch sizes, timestamps and rates are all capped.',
       'Alert rules are claimed with a single conditional UPDATE, so two overlapping requests can never both fire; webhook URLs are restricted to Discord and Slack to block SSRF.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'promptcraft',
@@ -186,7 +186,7 @@ export const webProjects: Project[] = [
     kind: 'WEB',
     pitch: 'Prompt engineering lab: run a template across models side by side, keep a branching version history with diffs, and share prompts in a public library.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Groq', 'Drizzle ORM', 'Neon Postgres', 'Netlify Functions'],
-    liveUrl: null,
+    liveUrl: 'https://promptcraft-599.netlify.app',
     repoUrl: 'https://github.com/brandigail/promptcraft',
     screenshots: [
       '/screenshots/promptcraft-workspace-desktop.png',
@@ -204,7 +204,7 @@ export const webProjects: Project[] = [
       'Rate limits are counted in Postgres so they hold across serverless invocations; ratings update sum and count in one SQL statement.',
       'One shared model list drives the UI, validation and server.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'beam',

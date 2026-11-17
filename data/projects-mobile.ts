@@ -108,7 +108,7 @@ export const mobileProjects: Project[] = [
     kind: 'MOBILE',
     pitch: 'Minimalist habit tracker with a GitHub-style 365-day heatmap, streaks and an installable offline app.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'IndexedDB', 'idb', 'PWA'],
-    liveUrl: null,
+    liveUrl: 'https://habitgrid-592.netlify.app',
     repoUrl: 'https://github.com/brandigail/habitgrid',
     screenshots: [
       '/screenshots/habitgrid-today-mobile.png',
@@ -126,7 +126,7 @@ export const mobileProjects: Project[] = [
       'State lives in memory and is written through to IndexedDB, so the screen never waits on storage.',
       'Initial JavaScript is about 81 kB gzipped, with Progress, Habits and Settings loaded on demand.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'audionote',
@@ -134,7 +134,7 @@ export const mobileProjects: Project[] = [
     kind: 'MOBILE',
     pitch: 'Voice note recorder with a live waveform, timeline marks, up to 2x playback and optional Groq transcription, all offline-capable.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'MediaRecorder', 'Web Audio API', 'Dexie', 'Groq Whisper', 'Netlify Functions', 'Neon Postgres', 'PWA'],
-    liveUrl: null,
+    liveUrl: 'https://audionote-315.netlify.app',
     repoUrl: 'https://github.com/brandigail/audionote',
     screenshots: [
       '/screenshots/audionote-recording-desktop.png',
@@ -152,7 +152,7 @@ export const mobileProjects: Project[] = [
       'Rate limits are counted in Postgres with one atomic upsert, keyed by a hash of the address, never the address itself.',
       'Everything except transcription works with no connection.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'fieldops',
@@ -212,7 +212,7 @@ export const mobileProjects: Project[] = [
     kind: 'MOBILE',
     pitch: 'Trip logger: live GPS route on a map, waypoints with notes and photos, an elevation profile and GPX or KML export.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Leaflet', 'OpenStreetMap', 'Geolocation API', 'Dexie', 'Recharts', 'PWA'],
-    liveUrl: null,
+    liveUrl: 'https://geotrace-594.netlify.app',
     repoUrl: 'https://github.com/brandigail/geotrace',
     screenshots: [
       '/screenshots/geotrace-trips-mobile.png',
@@ -230,7 +230,7 @@ export const mobileProjects: Project[] = [
       'A trip exists from its first good reading, so a refused permission leaves nothing behind and an interrupted trip is recoverable.',
       'Maps are client-only and resize-aware, and fit-to-route only acts on real changes so the growing line never snaps the view back.',
     ],
-    status: 'IN_PROGRESS',
+    status: 'LIVE',
   },
   {
     slug: 'pocketvault',
